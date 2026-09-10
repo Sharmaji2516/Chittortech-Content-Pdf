@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChittorTech - Google Play Publishing Brochure</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0f172a;
+            --secondary: #2563eb;
+            --accent: #3b82f6;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f1f5f9;
+            margin: 0;
+            padding: 0;
+            -webkit-print-color-adjust: exact !important;
+            print-color-adjust: exact !important;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Outfit', sans-serif;
+        }
+        .page {
+            width: 210mm;
+            height: 297mm;
+            background: white;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            page-break-after: always;
+            page-break-inside: avoid;
+        }
+        @media print {
+            body {
+                background: none;
+            }
+            .page {
+                margin: 0;
+                box-shadow: none;
+            }
+        }
+        .bg-gradient-tech {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #3b82f6, #06b6d4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .pricing-card {
+            border: 1px solid #e2e8f0;
+            border-radius: 16px;
+            padding: 24px;
+            background: #ffffff;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+        .pricing-card-highlight {
+            border: 2px solid #3b82f6;
+            background: linear-gradient(to bottom, #ffffff, #f8fafc);
+            box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.1);
+        }
+        .footer-bar {
+            height: 50px;
+            background: #0f172a;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 40px;
+            color: #94a3b8;
+            font-size: 12px;
+            flex-shrink: 0;
+            margin-top: auto;
+            width: 100%;
+        }
+        .page-content {
+            padding: 35px 40px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- PAGE 1: COVER -->
+    <div class="page bg-gradient-tech flex flex-col justify-center items-center text-center relative text-white">
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden opacity-10">
+            <svg viewBox="0 0 100 100" preserveAspectRatio="none" class="absolute w-full h-full text-blue-500">
+                <path d="M0,0 L100,0 L100,100 L0,100 Z" fill="none" stroke="currentColor" stroke-width="0.5"/>
+                <circle cx="50" cy="50" r="40" fill="none" stroke="currentColor" stroke-width="0.2"/>
+                <circle cx="50" cy="50" r="30" fill="none" stroke="currentColor" stroke-width="0.2"/>
+            </svg>
+        </div>
+        
+        <div class="z-10 flex flex-col items-center max-w-2xl px-8">
+            <img src="../chittortech_logo_1775884354186.png" alt="ChittorTech Logo" class="h-32 mb-6">
+            <div class="mb-10 inline-flex items-center gap-2 bg-gradient-to-r from-orange-500/20 via-white/20 to-green-500/20 border border-white/30 backdrop-blur-md px-5 py-2 rounded-full text-white font-semibold text-sm shadow-xl">
+                <span>🚀 iStart Approved Startup (Rajasthan Government)</span>
+            </div>
+            <h1 class="text-6xl font-bold mb-4 tracking-tight">CHITTORTECH™</h1>
+            <p class="text-2xl font-light text-blue-200 mb-12">Technology Solutions That Grow With Your Business.</p>
+            
+            <div class="flex flex-wrap justify-center gap-4 text-lg font-bold tracking-widest uppercase text-blue-400 border border-blue-500/50 rounded-xl py-3 px-6 bg-blue-900/30">
+                <span>Google Play Publishing Guide</span>
+            </div>
+        </div>
+
+        <div class="absolute bottom-12 text-blue-400 font-medium text-lg">
+            www.chittortech.online
+        </div>
+    </div>
+
+    <!-- PAGE 2: INTRODUCTION & CHALLENGES -->
+    <div class="page">
+        <div class="page-content">
+            <header class="flex justify-between items-center mb-10 pb-6 border-b border-gray-100">
+                <div class="bg-slate-900 rounded-xl p-3"><img src="../chittortech_logo_1775884354186.png" alt="Logo" class="h-8"></div>
+                <span class="text-sm font-semibold text-gray-400 uppercase tracking-wider">App Publishing Services</span>
+            </header>
+
+            <h2 class="text-4xl font-bold text-slate-900 mb-6">Google Play Store App Publishing & Testing</h2>
+            <p class="text-lg text-slate-600 mb-10 leading-relaxed">
+                Struggling with the 20-tester rule, organization verification, or account suspensions? Let ChittorTech publish and manage your Android applications securely.
+            </p>
+
+            <div class="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-xl mb-10">
+                <h3 class="text-xl font-bold text-blue-900 mb-2">Publishing on Google Play is harder than ever</h3>
+                <p class="text-sm text-blue-800 leading-relaxed">
+                    Google Play Store has implemented strict verification policies to combat spam and malware. Newly registered individual developer accounts are now locked behind a mandatory 20-tester testing program for 14 continuous days. Business verification has also grown complex, requiring D-U-N-S numbers, official business documents, and verified local representatives.
+                </p>
+            </div>
+
+            <h3 class="text-2xl font-bold text-slate-900 mb-6">How We Eliminate Friction</h3>
+            <div class="grid grid-cols-2 gap-6">
+                <div class="flex items-start gap-4">
+                    <div class="w-10 h-10 bg-slate-900 text-white rounded-xl flex items-center justify-center flex-shrink-0 mt-1 shadow-md">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-slate-800">20-Tester Rule Fulfilled</h4>
+                        <p class="text-sm text-slate-500">No need to find 20 testers. We fulfill Google's mandatory 14-day closed testing opt-in requirement.</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-4">
+                    <div class="w-10 h-10 bg-slate-900 text-white rounded-xl flex items-center justify-center flex-shrink-0 mt-1 shadow-md">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-slate-800">Compliance Check</h4>
+                        <p class="text-sm text-slate-500">Complete analysis of your APK/AAB package, target SDK version, and privacy policy compliance.</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-4">
+                    <div class="w-10 h-10 bg-slate-900 text-white rounded-xl flex items-center justify-center flex-shrink-0 mt-1 shadow-md">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-slate-800">Zero Setup Hassle</h4>
+                        <p class="text-sm text-slate-500">Save registration costs, legal verification, and identity audits using our verified accounts.</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-4">
+                    <div class="w-10 h-10 bg-slate-900 text-white rounded-xl flex items-center justify-center flex-shrink-0 mt-1 shadow-md">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-slate-800">Active Maintenance</h4>
+                        <p class="text-sm text-slate-500">Constant store listing optimization, crash analysis, and seamless update submissions.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="footer-bar">
+            <span>ChittorTech™ | Google Play Publishing</span>
+            <span>Page 02</span>
+        </div>
+    </div>
+
+    <!-- PAGE 3: PRICING PLANS -->
+    <div class="page">
+        <div class="page-content">
+            <header class="flex justify-between items-center mb-6 pb-4 border-b border-gray-100">
+                <div class="bg-slate-900 rounded-lg p-2"><img src="../chittortech_logo_1775884354186.png" alt="Logo" class="h-6"></div>
+                <span class="text-sm font-semibold text-blue-600 uppercase tracking-wider">Pricing Plans</span>
+            </header>
+
+            <h2 class="text-3xl font-bold text-slate-900 mb-2">Choose Your Publishing Path</h2>
+            <p class="text-sm text-slate-500 mb-8">No hidden charges. Select the publishing route that fits your business model.</p>
+
+            <div class="space-y-6">
+                <!-- Package 1 -->
+                <div class="pricing-card flex flex-col relative overflow-hidden">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold text-slate-800 mb-1">Publish on Your Account</h3>
+                            <p class="text-sm text-slate-500 max-w-sm">Perfect for developers who already own a Google Play Console and want experts to handle compliance, setup, and submission.</p>
+                        </div>
+                        <div class="text-right ml-4">
+                            <span class="text-xs text-slate-400 uppercase font-semibold block mb-1">Fixed Price</span>
+                            <div class="text-3xl font-bold text-blue-600">₹8,299 <span class="text-lg text-slate-400 font-normal">($99)</span></div>
+                        </div>
+                    </div>
+                    <div class="bg-slate-50 rounded-lg p-4 border border-slate-100">
+                        <ul class="grid grid-cols-2 gap-y-2 gap-x-4 text-sm text-slate-600">
+                            <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-blue-500 rounded-full"></div> Store Listing Setup (ASO)</li>
+                            <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-blue-500 rounded-full"></div> Pre-Submission Compliance Check</li>
+                            <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-blue-500 rounded-full"></div> AAB/APK & SDK Target Check</li>
+                            <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-blue-500 rounded-full"></div> Privacy Policy Hosting Setup</li>
+                            <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-blue-500 rounded-full"></div> Review Process Management</li>
+                            <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-blue-500 rounded-full"></div> 1 Free App Update (within 30 days)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Package 2 -->
+                <div class="pricing-card pricing-card-highlight flex flex-col relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-blue-600 text-white text-[10px] font-bold px-4 py-1.5 rounded-bl-lg uppercase tracking-widest shadow-md">Most Accessible</div>
+                    <div class="flex justify-between items-start mb-4 mt-2">
+                        <div>
+                            <h3 class="text-2xl font-bold text-slate-800 mb-1">Publish on ChittorTech Account</h3>
+                            <p class="text-sm text-slate-500 max-w-sm">No developer account? No problem. Skip the $25 fee and verification. We publish your app on our verified console.</p>
+                        </div>
+                        <div class="text-right ml-4">
+                            <span class="text-xs text-slate-400 uppercase font-semibold block mb-1">Annual Pricing</span>
+                            <div class="text-3xl font-bold text-blue-600">₹16,599 <span class="text-lg text-slate-400 font-normal">($199)</span></div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg p-4 border border-blue-100 shadow-inner">
+                        <ul class="grid grid-cols-2 gap-y-2 gap-x-4 text-sm text-slate-600">
+                            <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-blue-500 rounded-full"></div> 1-Year Hosting under ChittorTech</li>
+                            <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-blue-500 rounded-full"></div> Complete Store Asset Upload & Setup</li>
+                            <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-blue-500 rounded-full"></div> Strict Policy & Security Audit</li>
+                            <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-blue-500 rounded-full"></div> Privacy Policy Creation & Hosting</li>
+                            <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-blue-500 rounded-full"></div> Active Console Monitoring & Alerts</li>
+                            <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-blue-500 rounded-full"></div> 2 Free Updates per year</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Package 3 -->
+                <div class="bg-slate-900 text-white rounded-2xl p-6 relative overflow-hidden shadow-xl mt-6">
+                    <div class="absolute inset-0 opacity-10 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjEiIGZpbGw9IiNmZmYiLz48L3N2Zz4=')]"></div>
+                    <div class="relative z-10">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-2xl font-bold mb-1 text-blue-300">Full Account Setup & Launch</h3>
+                                <p class="text-sm text-slate-300 max-w-sm">For businesses wanting their own dedicated developer console. We handle organization verification and setup.</p>
+                            </div>
+                            <div class="text-right border-l border-slate-700 pl-6 ml-4">
+                                <span class="text-xs text-slate-400 uppercase font-semibold block mb-1">Fixed Price</span>
+                                <div class="text-3xl font-bold text-white">₹25,499 <span class="text-lg text-slate-400 font-normal">($299)</span></div>
+                            </div>
+                        </div>
+                        <ul class="grid grid-cols-2 gap-y-2 gap-x-4 text-sm text-slate-300">
+                            <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-blue-500 rounded-full"></div> Organization/Individual Registration</li>
+                            <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-blue-500 rounded-full"></div> D-U-N-S Number Guidance</li>
+                            <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-blue-500 rounded-full"></div> Business Identity Verification Help</li>
+                            <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-blue-500 rounded-full"></div> Google API Console Config</li>
+                            <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-blue-500 rounded-full"></div> First App Upload & Publishing</li>
+                            <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-blue-500 rounded-full"></div> 1-Month Dedicated Account Support</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer-bar">
+            <span>ChittorTech™ | Google Play Publishing</span>
+            <span>Page 03</span>
+        </div>
+    </div>
+
+    <!-- PAGE 4: PROCESS & FAQ -->
+    <div class="page">
+        <div class="page-content">
+            <header class="flex justify-between items-center mb-8 pb-4 border-b border-gray-100">
+                <div class="bg-slate-900 rounded-lg p-2"><img src="../chittortech_logo_1775884354186.png" alt="Logo" class="h-6"></div>
+                <span class="text-sm font-semibold text-blue-600 uppercase tracking-wider">Workflow & Support</span>
+            </header>
+
+            <h2 class="text-3xl font-bold text-slate-900 mb-6">How the Process Works</h2>
+            <p class="text-sm text-slate-500 mb-8">Get your app online in 4 simple steps.</p>
+
+            <div class="space-y-6 mb-12 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent">
+                <!-- Step 1 -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-900 text-white font-bold shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">1</div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
+                        <h4 class="font-bold text-slate-800 mb-1">App Submission</h4>
+                        <p class="text-xs text-slate-500">Upload your app bundle (.aab or .apk) along with screenshots, app icon, descriptions, and privacy policy details.</p>
+                    </div>
+                </div>
+                <!-- Step 2 -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-900 text-white font-bold shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">2</div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
+                        <h4 class="font-bold text-slate-800 mb-1">Policy & Security Review</h4>
+                        <p class="text-xs text-slate-500">Our testing team audits the application for compliance violations and crashes to guarantee a 100% review pass rate.</p>
+                    </div>
+                </div>
+                <!-- Step 3 -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-blue-600 text-white font-bold shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">3</div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-blue-50 p-4 rounded-xl border border-blue-200 shadow-sm">
+                        <h4 class="font-bold text-slate-800 mb-1">Testing & Validation</h4>
+                        <p class="text-xs text-slate-600">If running on your console, we spin up our 20-tester network to complete the mandatory 14-day continuous opt-in testing.</p>
+                    </div>
+                </div>
+                <!-- Step 4 -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-900 text-white font-bold shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">4</div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
+                        <h4 class="font-bold text-slate-800 mb-1">App Launch & Live Status</h4>
+                        <p class="text-xs text-slate-500">We submit the app to Google Play Store and monitor it until it is officially approved and live for public download.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="text-2xl font-bold text-slate-900 mb-4">Frequently Asked Questions</h2>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-slate-50 p-4 rounded-lg border border-slate-200">
+                    <h4 class="font-bold text-sm text-slate-800 mb-1">Google Play Console par app publish karne me kitna time lagta hai?</h4>
+                    <p class="text-xs text-slate-500">Generally 3 to 7 days for review. If testing is required, it adds 14 days.</p>
+                </div>
+                <div class="bg-slate-50 p-4 rounded-lg border border-slate-200">
+                    <h4 class="font-bold text-sm text-slate-800 mb-1">What is Google's new 20-tester rule?</h4>
+                    <p class="text-xs text-slate-500">New personal accounts must have 20 people test their app for 14 continuous days before publishing.</p>
+                </div>
+                <div class="bg-slate-50 p-4 rounded-lg border border-slate-200">
+                    <h4 class="font-bold text-sm text-slate-800 mb-1">Kya mera app suspend hone ka khatra hai?</h4>
+                    <p class="text-xs text-slate-500">If you follow Google's policies and use original code/assets, your app is completely safe.</p>
+                </div>
+                <div class="bg-slate-50 p-4 rounded-lg border border-slate-200">
+                    <h4 class="font-bold text-sm text-slate-800 mb-1">Agar app update karna ho toh kya charge hoga?</h4>
+                    <p class="text-xs text-slate-500">We offer free updates within a specific period depending on your chosen plan. Minimal charges apply later.</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer-bar">
+            <span>ChittorTech™ | Google Play Publishing</span>
+            <span>Page 04</span>
+        </div>
+    </div>
+
+    <!-- PAGE 5: COMPLIANCE -->
+    <div class="page">
+        <div class="page-content">
+            <header class="flex justify-between items-center mb-10 pb-6 border-b border-gray-100">
+                <div class="bg-slate-900 rounded-lg p-2"><img src="../chittortech_logo_1775884354186.png" alt="Logo" class="h-6"></div>
+                <span class="text-sm font-semibold text-blue-600 uppercase tracking-wider">Quality Control</span>
+            </header>
+
+            <h2 class="text-4xl font-bold text-slate-900 mb-4">Strict Compliance & Acceptance</h2>
+            <p class="text-lg text-slate-600 mb-10 leading-relaxed">
+                To protect our verified developer consoles and our clients' reputations, we maintain strict quality control and content guidelines.
+            </p>
+
+            <div class="grid grid-cols-2 gap-8">
+                <!-- What We Publish -->
+                <div class="bg-green-50 border border-green-200 rounded-2xl p-6">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-10 h-10 bg-green-500 text-white rounded-full flex items-center justify-center shadow">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-800">What We Publish</h3>
+                    </div>
+                    
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <div class="w-6 h-6 rounded-full bg-green-200 text-green-700 flex items-center justify-center flex-shrink-0 mt-0.5"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></div>
+                            <div>
+                                <h4 class="font-bold text-slate-800 text-sm">E-Commerce & Business Portals</h4>
+                                <p class="text-xs text-slate-600">Online stores, brand apps, and B2B ordering platforms.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="w-6 h-6 rounded-full bg-green-200 text-green-700 flex items-center justify-center flex-shrink-0 mt-0.5"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></div>
+                            <div>
+                                <h4 class="font-bold text-slate-800 text-sm">Custom ERP & POS Clients</h4>
+                                <p class="text-xs text-slate-600">Internal management tools and enterprise client applications.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="w-6 h-6 rounded-full bg-green-200 text-green-700 flex items-center justify-center flex-shrink-0 mt-0.5"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></div>
+                            <div>
+                                <h4 class="font-bold text-slate-800 text-sm">Utility & Productivity</h4>
+                                <p class="text-xs text-slate-600">Calculators, organizers, task managers, and functional tools.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="w-6 h-6 rounded-full bg-green-200 text-green-700 flex items-center justify-center flex-shrink-0 mt-0.5"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></div>
+                            <div>
+                                <h4 class="font-bold text-slate-800 text-sm">Educational & EdTech</h4>
+                                <p class="text-xs text-slate-600">Learning management systems, course viewers, and quiz apps.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="w-6 h-6 rounded-full bg-green-200 text-green-700 flex items-center justify-center flex-shrink-0 mt-0.5"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></div>
+                            <div>
+                                <h4 class="font-bold text-slate-800 text-sm">Local Service Booking</h4>
+                                <p class="text-xs text-slate-600">Salon, medical, hotel directories, and scheduling apps.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- What We Do NOT Publish -->
+                <div class="bg-red-50 border border-red-200 rounded-2xl p-6">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-10 h-10 bg-red-500 text-white rounded-full flex items-center justify-center shadow">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-800">What We Reject</h3>
+                    </div>
+                    
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <div class="w-6 h-6 rounded-full bg-red-200 text-red-700 flex items-center justify-center flex-shrink-0 mt-0.5"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></div>
+                            <div>
+                                <h4 class="font-bold text-slate-800 text-sm">Real Money Gambling</h4>
+                                <p class="text-xs text-slate-600">Betting platforms, casinos, and unregulated cash-prize games.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="w-6 h-6 rounded-full bg-red-200 text-red-700 flex items-center justify-center flex-shrink-0 mt-0.5"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></div>
+                            <div>
+                                <h4 class="font-bold text-slate-800 text-sm">Unlicensed FinTech</h4>
+                                <p class="text-xs text-slate-600">Short-term loan apps and financial services without valid licensing.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="w-6 h-6 rounded-full bg-red-200 text-red-700 flex items-center justify-center flex-shrink-0 mt-0.5"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></div>
+                            <div>
+                                <h4 class="font-bold text-slate-800 text-sm">Cloned Unofficial Codes</h4>
+                                <p class="text-xs text-slate-600">Plagiarized apps or 100% reskinned source codes from CodeCanyon without value add.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="w-6 h-6 rounded-full bg-red-200 text-red-700 flex items-center justify-center flex-shrink-0 mt-0.5"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></div>
+                            <div>
+                                <h4 class="font-bold text-slate-800 text-sm">Dating, Spam or Malware</h4>
+                                <p class="text-xs text-slate-600">Inappropriate content, excessive ad-spam apps, or malicious software.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <div class="w-6 h-6 rounded-full bg-red-200 text-red-700 flex items-center justify-center flex-shrink-0 mt-0.5"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></div>
+                            <div>
+                                <h4 class="font-bold text-slate-800 text-sm">Copyright Infringing Apps</h4>
+                                <p class="text-xs text-slate-600">Movie downloaders, YouTube downloaders, and trademark violators.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-auto bg-slate-900 text-white p-6 rounded-xl flex items-center justify-between">
+                <div>
+                    <h3 class="font-bold mb-1">Have a custom or complex application?</h3>
+                    <p class="text-sm text-slate-400">Our compliance team can review your app before you purchase a plan.</p>
+                </div>
+                <div class="bg-blue-600 px-6 py-2 rounded-lg font-bold text-sm">Free App Review</div>
+            </div>
+
+        </div>
+        <div class="footer-bar">
+            <span>ChittorTech™ | Google Play Publishing</span>
+            <span>Page 05</span>
+        </div>
+    </div>
+
+    <!-- PAGE 6: CUSTOM SOLUTIONS & PRICING -->
+    <div class="page">
+        <div class="page-content flex flex-col justify-center items-center text-center">
+            <div class="w-20 h-20 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center mb-8 mt-10">
+                <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"></path></svg>
+            </div>
+            
+            <h2 class="text-4xl font-bold text-slate-900 mb-6">Customizable Solutions</h2>
+            <p class="text-xl text-slate-600 mb-12 max-w-2xl leading-relaxed">
+                Every business is unique, and so are its digital requirements. We specialize in building fully customized websites, applications, and SaaS platforms tailored entirely to your specific operational needs and goals.
+            </p>
+
+            <div class="bg-blue-50 border border-blue-200 rounded-2xl p-8 max-w-2xl w-full text-left shadow-sm mb-8">
+                <h3 class="text-xl font-bold text-slate-800 mb-4 flex items-center gap-2">
+                    <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    Pricing Disclaimer
+                </h3>
+                <ul class="space-y-4 text-slate-700 text-base">
+                    <li class="flex items-start gap-3">
+                        <div class="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
+                        <span><strong>Fixed Publishing Prices:</strong> The rates mentioned in the publishing section are fixed for standard applications.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <div class="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
+                        <span><strong>Custom App Development Rates:</strong> Pricing for custom application development will vary based on complexity, feature set, design requirements, and specific client needs.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <div class="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
+                        <span><strong>Final Quotation:</strong> After a detailed consultation to understand your exact requirements, we will provide a comprehensive, finalized quotation specific to your project.</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <p class="text-base font-medium text-slate-500">Reach out to us to discuss your customized project requirements.</p>
+        </div>
+        <div class="footer-bar">
+            <span>ChittorTech™ | Google Play Publishing</span>
+            <span>Page 06</span>
+        </div>
+    </div>
+
+    <!-- PAGE 7: BACK COVER -->
+    <div class="page bg-gradient-tech flex flex-col justify-center items-center text-center relative text-white">
+        <!-- Abstract background elements -->
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden opacity-10">
+            <svg viewBox="0 0 100 100" preserveAspectRatio="none" class="absolute w-full h-full text-blue-500">
+                <path d="M0,0 L100,0 L100,100 L0,100 Z" fill="none" stroke="currentColor" stroke-width="0.5"/>
+                <circle cx="50" cy="50" r="40" fill="none" stroke="currentColor" stroke-width="0.2"/>
+                <circle cx="50" cy="50" r="30" fill="none" stroke="currentColor" stroke-width="0.2"/>
+            </svg>
+        </div>
+        
+        <div class="z-10 flex flex-col items-center max-w-2xl px-8">
+            <h2 class="text-5xl font-bold mb-6 tracking-tight">Let's Launch Your App.</h2>
+            <p class="text-xl font-light text-blue-200 mb-12">Ready to publish your application to millions of Android users worldwide? Get in touch with us today.</p>
+            
+            <div class="bg-slate-900/50 backdrop-blur-md border border-slate-700/50 rounded-2xl p-8 w-full max-w-md shadow-2xl">
+                <div class="mb-6">
+                    <h3 class="text-sm uppercase tracking-widest text-slate-400 font-bold mb-2">Contact Us</h3>
+                    <div class="flex items-center justify-center gap-3 text-lg font-medium text-white mb-2">
+                        <svg class="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        contact@chittortech.online
+                    </div>
+                </div>
+                
+                <div class="pt-6 border-t border-slate-700/50">
+                    <h3 class="text-sm uppercase tracking-widest text-slate-400 font-bold mb-2">Visit Us</h3>
+                    <div class="flex items-center justify-center gap-3 text-lg font-medium text-white">
+                        <svg class="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path></svg>
+                        www.chittortech.online
+                    </div>
+                </div>
+            </div>
+            
+            <img src="../chittortech_logo_1775884354186.png" alt="ChittorTech Logo" class="h-24 mt-16">
+        </div>
+    </div>
+
+</body>
+</html>

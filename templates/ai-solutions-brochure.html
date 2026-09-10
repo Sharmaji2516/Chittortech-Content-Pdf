@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChittorTech - AI Solutions Brochure</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0f172a;
+            --secondary: #2563eb;
+            --accent: #3b82f6;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f1f5f9;
+            margin: 0;
+            padding: 0;
+            -webkit-print-color-adjust: exact !important;
+            print-color-adjust: exact !important;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Outfit', sans-serif;
+        }
+        .page {
+            width: 210mm;
+            height: 297mm;
+            background: white;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            page-break-after: always;
+            page-break-inside: avoid;
+        }
+        @media print {
+            body {
+                background: none;
+            }
+            .page {
+                margin: 0;
+                box-shadow: none;
+            }
+        }
+        .bg-gradient-tech {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #3b82f6, #06b6d4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .pricing-card {
+            border: 1px solid #e2e8f0;
+            border-radius: 16px;
+            padding: 24px;
+            background: #ffffff;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+        .pricing-card-highlight {
+            border: 2px solid #3b82f6;
+            background: linear-gradient(to bottom, #ffffff, #f8fafc);
+            box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.1);
+        }
+        .footer-bar {
+            height: 50px;
+            background: #0f172a;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 40px;
+            color: #94a3b8;
+            font-size: 12px;
+            flex-shrink: 0;
+            margin-top: auto;
+            width: 100%;
+        }
+        .page-content {
+            padding: 35px 40px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- PAGE 1: COVER -->
+    <div class="page bg-gradient-tech flex flex-col justify-center items-center text-center relative text-white">
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden opacity-10">
+            <svg viewBox="0 0 100 100" preserveAspectRatio="none" class="absolute w-full h-full text-blue-500">
+                <path d="M0,0 L100,0 L100,100 L0,100 Z" fill="none" stroke="currentColor" stroke-width="0.5"/>
+                <circle cx="50" cy="50" r="40" fill="none" stroke="currentColor" stroke-width="0.2"/>
+                <circle cx="50" cy="50" r="30" fill="none" stroke="currentColor" stroke-width="0.2"/>
+            </svg>
+        </div>
+        
+        <div class="z-10 flex flex-col items-center max-w-2xl px-8">
+            <img src="../chittortech_logo_1775884354186.png" alt="ChittorTech Logo" class="h-32 mb-6">
+            <div class="mb-10 inline-flex items-center gap-2 bg-gradient-to-r from-orange-500/20 via-white/20 to-green-500/20 border border-white/30 backdrop-blur-md px-5 py-2 rounded-full text-white font-semibold text-sm shadow-xl">
+                <span>🚀 iStart Approved Startup (Rajasthan Government)</span>
+            </div>
+            <h1 class="text-6xl font-bold mb-4 tracking-tight">CHITTORTECH™</h1>
+            <p class="text-2xl font-light text-blue-200 mb-12">Intelligent AI & Knowledge Systems For Your Business.</p>
+            
+            <div class="flex flex-wrap justify-center gap-4 text-lg font-bold tracking-widest uppercase text-blue-400 border border-blue-500/50 rounded-xl py-3 px-6 bg-blue-900/30">
+                <span>AI Solutions & Chatbots Guide</span>
+            </div>
+        </div>
+
+        <div class="absolute bottom-12 text-blue-400 font-medium text-lg">
+            www.chittortech.online
+        </div>
+    </div>
+
+    <!-- PAGE 2: WHAT IS RAG & ENTERPRISE AI -->
+    <div class="page">
+        <div class="page-content">
+            <header class="flex justify-between items-center mb-10 pb-6 border-b border-gray-100">
+                <div class="bg-slate-900 rounded-xl p-3"><img src="../chittortech_logo_1775884354186.png" alt="Logo" class="h-8"></div>
+                <span class="text-sm font-semibold text-gray-400 uppercase tracking-wider">Enterprise AI Search</span>
+            </header>
+
+            <h2 class="text-4xl font-bold text-slate-900 mb-6">RAG Knowledge Base & Enterprise AI</h2>
+            <p class="text-lg text-slate-600 mb-10 leading-relaxed">
+                Transform thousands of internal documents, PDFs, manuals, and databases into an intelligent, instantly searchable AI knowledge system. Eliminate information silos and empower your teams to find answers in seconds.
+            </p>
+
+            <div class="grid grid-cols-4 gap-4 mb-10">
+                <div class="bg-blue-50 p-4 rounded-xl text-center border border-blue-100">
+                    <div class="text-3xl font-bold text-blue-600 mb-1">10x</div>
+                    <div class="text-xs text-slate-500 uppercase font-semibold">Faster Retrieval</div>
+                </div>
+                <div class="bg-blue-50 p-4 rounded-xl text-center border border-blue-100">
+                    <div class="text-3xl font-bold text-blue-600 mb-1">95%</div>
+                    <div class="text-xs text-slate-500 uppercase font-semibold">Accuracy Rate</div>
+                </div>
+                <div class="bg-blue-50 p-4 rounded-xl text-center border border-blue-100">
+                    <div class="text-3xl font-bold text-blue-600 mb-1">∞</div>
+                    <div class="text-xs text-slate-500 uppercase font-semibold">Docs Supported</div>
+                </div>
+                <div class="bg-blue-50 p-4 rounded-xl text-center border border-blue-100">
+                    <div class="text-3xl font-bold text-blue-600 mb-1">24/7</div>
+                    <div class="text-xs text-slate-500 uppercase font-semibold">AI Search</div>
+                </div>
+            </div>
+
+            <div class="bg-slate-900 text-white p-8 rounded-2xl mb-8 shadow-lg">
+                <h3 class="text-2xl font-bold mb-3 text-blue-400">Retrieval-Augmented Generation (RAG)</h3>
+                <p class="text-sm text-slate-300 leading-relaxed mb-6">
+                    RAG is the gold standard for enterprise AI. Instead of relying on a generic LLM's outdated training data, RAG connects AI to your specific documents, policies, and databases — so answers are always accurate, current, and traceable to real sources.
+                </p>
+                <div class="flex items-center gap-2 text-sm font-semibold text-green-400">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> Zero Data Leakage. 100% Secure.
+                </div>
+            </div>
+
+            <h3 class="text-xl font-bold text-slate-900 mb-4">How RAG Works</h3>
+            <div class="flex justify-between items-center relative">
+                <div class="absolute left-0 top-1/2 w-full h-0.5 bg-blue-100 -z-10 -translate-y-1/2"></div>
+                
+                <div class="bg-white border-2 border-blue-500 rounded-xl p-3 w-[22%] text-center shadow-md">
+                    <div class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-2 font-bold text-xs">01</div>
+                    <h4 class="font-bold text-slate-800 text-xs mb-1">Ingest</h4>
+                    <p class="text-[10px] text-slate-500">Upload documents & DBs</p>
+                </div>
+                <div class="bg-white border-2 border-slate-200 rounded-xl p-3 w-[22%] text-center">
+                    <div class="w-8 h-8 bg-slate-200 text-slate-600 rounded-full flex items-center justify-center mx-auto mb-2 font-bold text-xs">02</div>
+                    <h4 class="font-bold text-slate-800 text-xs mb-1">Embed</h4>
+                    <p class="text-[10px] text-slate-500">Convert to vectors</p>
+                </div>
+                <div class="bg-white border-2 border-slate-200 rounded-xl p-3 w-[22%] text-center">
+                    <div class="w-8 h-8 bg-slate-200 text-slate-600 rounded-full flex items-center justify-center mx-auto mb-2 font-bold text-xs">03</div>
+                    <h4 class="font-bold text-slate-800 text-xs mb-1">Retrieve</h4>
+                    <p class="text-[10px] text-slate-500">Find relevant chunks</p>
+                </div>
+                <div class="bg-white border-2 border-blue-500 rounded-xl p-3 w-[22%] text-center shadow-md">
+                    <div class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-2 font-bold text-xs">04</div>
+                    <h4 class="font-bold text-slate-800 text-xs mb-1">Generate</h4>
+                    <p class="text-[10px] text-slate-500">Precise cited answer</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer-bar">
+            <span>ChittorTech™ | AI Solutions</span>
+            <span>Page 02</span>
+        </div>
+    </div>
+
+    <!-- PAGE 3: CHATBOT SERVICES -->
+    <div class="page">
+        <div class="page-content">
+            <header class="flex justify-between items-center mb-8 pb-4 border-b border-gray-100">
+                <div class="bg-slate-900 rounded-lg p-2"><img src="../chittortech_logo_1775884354186.png" alt="Logo" class="h-6"></div>
+                <span class="text-sm font-semibold text-blue-600 uppercase tracking-wider">AI Chatbots</span>
+            </header>
+
+            <h2 class="text-3xl font-bold text-slate-900 mb-4">Intelligent AI Chatbot Development</h2>
+            <p class="text-sm text-slate-600 mb-8 max-w-2xl">
+                Automate your customer service, generate leads, and engage users 24/7 with custom-trained AI chatbots. We build intelligent conversational agents across all your digital touchpoints.
+            </p>
+
+            <div class="space-y-6">
+                <!-- Website Chatbots -->
+                <div class="p-5 border border-slate-200 rounded-xl bg-white shadow-sm flex gap-5 items-start">
+                    <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center flex-shrink-0">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-slate-800 text-xl mb-2">Website AI Chatbots</h3>
+                        <p class="text-sm text-slate-600 mb-3">
+                            Embed a custom-trained AI directly into your website. It can answer customer FAQs, guide users through your services, collect lead information, and schedule appointments—all in real-time, reducing bounce rates and boosting conversions.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2 py-1 bg-slate-100 text-slate-600 rounded text-[10px] font-bold">Lead Gen</span>
+                            <span class="px-2 py-1 bg-slate-100 text-slate-600 rounded text-[10px] font-bold">24/7 Support</span>
+                            <span class="px-2 py-1 bg-slate-100 text-slate-600 rounded text-[10px] font-bold">Custom Widget</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- WhatsApp Chatbots -->
+                <div class="p-5 border border-green-200 rounded-xl bg-green-50 shadow-sm flex gap-5 items-start">
+                    <div class="w-12 h-12 rounded-xl bg-green-500 text-white flex items-center justify-center flex-shrink-0 shadow-md">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564c.173.087.289.129.332.202.043.073.043.423-.101.827z"></path></svg>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-slate-800 text-xl mb-2">WhatsApp Business AI</h3>
+                        <p class="text-sm text-slate-600 mb-3">
+                            Turn your WhatsApp Business number into an automated sales and support engine. The AI handles customer inquiries, shares catalogs, answers product questions, and routes complex issues to human agents instantly.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2 py-1 bg-white text-green-700 rounded text-[10px] font-bold border border-green-200">Official API</span>
+                            <span class="px-2 py-1 bg-white text-green-700 rounded text-[10px] font-bold border border-green-200">Broadcasts</span>
+                            <span class="px-2 py-1 bg-white text-green-700 rounded text-[10px] font-bold border border-green-200">Automated Sales</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- General Chatbots -->
+                <div class="p-5 border border-slate-200 rounded-xl bg-white shadow-sm flex gap-5 items-start">
+                    <div class="w-12 h-12 rounded-xl bg-slate-900 text-white flex items-center justify-center flex-shrink-0">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-slate-800 text-xl mb-2">Omnichannel General AI Chatbots</h3>
+                        <p class="text-sm text-slate-600 mb-3">
+                            Need a bot for Facebook Messenger, Instagram, Slack, or an internal dashboard? We build unified conversational AI systems that integrate across multiple platforms and APIs to serve your specific workflow.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2 py-1 bg-slate-100 text-slate-600 rounded text-[10px] font-bold">Social Media</span>
+                            <span class="px-2 py-1 bg-slate-100 text-slate-600 rounded text-[10px] font-bold">Slack / Teams</span>
+                            <span class="px-2 py-1 bg-slate-100 text-slate-600 rounded text-[10px] font-bold">Custom Logic</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer-bar">
+            <span>ChittorTech™ | AI Solutions</span>
+            <span>Page 03</span>
+        </div>
+    </div>
+
+    <!-- PAGE 4: PLATFORM FEATURES -->
+    <div class="page">
+        <div class="page-content">
+            <header class="flex justify-between items-center mb-8 pb-4 border-b border-gray-100">
+                <div class="bg-slate-900 rounded-lg p-2"><img src="../chittortech_logo_1775884354186.png" alt="Logo" class="h-6"></div>
+                <span class="text-sm font-semibold text-blue-600 uppercase tracking-wider">Capabilities</span>
+            </header>
+
+            <h2 class="text-3xl font-bold text-slate-900 mb-6">Enterprise Knowledge System Features</h2>
+            
+            <div class="grid grid-cols-2 gap-x-6 gap-y-8 mb-10">
+                <div>
+                    <h4 class="font-bold text-slate-800 mb-1 flex items-center gap-2">
+                        <div class="w-1.5 h-1.5 bg-blue-500 rounded-full"></div> Instant Semantic Search
+                    </h4>
+                    <p class="text-xs text-slate-600 pl-3.5">Find answers across thousands of docs in milliseconds using vector similarity search — no keyword matching needed.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-slate-800 mb-1 flex items-center gap-2">
+                        <div class="w-1.5 h-1.5 bg-blue-500 rounded-full"></div> Source Attribution
+                    </h4>
+                    <p class="text-xs text-slate-600 pl-3.5">Every AI answer includes links to the exact source documents and page numbers, enabling instant verification.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-slate-800 mb-1 flex items-center gap-2">
+                        <div class="w-1.5 h-1.5 bg-blue-500 rounded-full"></div> Role-Based Access
+                    </h4>
+                    <p class="text-xs text-slate-600 pl-3.5">Granular permissions ensure employees only access documents they're authorized for (e.g., HR policies for HR).</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-slate-800 mb-1 flex items-center gap-2">
+                        <div class="w-1.5 h-1.5 bg-blue-500 rounded-full"></div> Real-Time Sync
+                    </h4>
+                    <p class="text-xs text-slate-600 pl-3.5">Connect to Google Drive, SharePoint, or internal systems for automatic syncing — your AI always stays current.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-slate-800 mb-1 flex items-center gap-2">
+                        <div class="w-1.5 h-1.5 bg-blue-500 rounded-full"></div> Multi-Language Support
+                    </h4>
+                    <p class="text-xs text-slate-600 pl-3.5">Query in English, Hindi, or regional languages. Our systems support cross-language semantic retrieval.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-slate-800 mb-1 flex items-center gap-2">
+                        <div class="w-1.5 h-1.5 bg-blue-500 rounded-full"></div> Private Deployment
+                    </h4>
+                    <p class="text-xs text-slate-600 pl-3.5">Full on-premise or private VPC deployment. Your documents never touch external AI services without consent.</p>
+                </div>
+            </div>
+
+            <div class="bg-blue-50 p-6 rounded-2xl border border-blue-100">
+                <h3 class="text-lg font-bold text-blue-900 mb-4">Supported Document Types</h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1.5 bg-white text-slate-700 rounded-lg text-xs font-semibold shadow-sm border border-slate-200">PDFs</span>
+                    <span class="px-3 py-1.5 bg-white text-slate-700 rounded-lg text-xs font-semibold shadow-sm border border-slate-200">Word / DOCX</span>
+                    <span class="px-3 py-1.5 bg-white text-slate-700 rounded-lg text-xs font-semibold shadow-sm border border-slate-200">Excel / CSV</span>
+                    <span class="px-3 py-1.5 bg-white text-slate-700 rounded-lg text-xs font-semibold shadow-sm border border-slate-200">PowerPoint</span>
+                    <span class="px-3 py-1.5 bg-white text-slate-700 rounded-lg text-xs font-semibold shadow-sm border border-slate-200">Web Pages</span>
+                    <span class="px-3 py-1.5 bg-white text-slate-700 rounded-lg text-xs font-semibold shadow-sm border border-slate-200">Confluence</span>
+                    <span class="px-3 py-1.5 bg-white text-slate-700 rounded-lg text-xs font-semibold shadow-sm border border-slate-200">Notion</span>
+                    <span class="px-3 py-1.5 bg-white text-slate-700 rounded-lg text-xs font-semibold shadow-sm border border-slate-200">SharePoint</span>
+                    <span class="px-3 py-1.5 bg-white text-slate-700 rounded-lg text-xs font-semibold shadow-sm border border-slate-200">SQL Databases</span>
+                    <span class="px-3 py-1.5 bg-white text-slate-700 rounded-lg text-xs font-semibold shadow-sm border border-slate-200">APIs</span>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer-bar">
+            <span>ChittorTech™ | AI Solutions</span>
+            <span>Page 04</span>
+        </div>
+    </div>
+
+    <!-- PAGE 5: USE CASES -->
+    <div class="page">
+        <div class="page-content">
+            <header class="flex justify-between items-center mb-8 pb-4 border-b border-gray-100">
+                <div class="bg-slate-900 rounded-lg p-2"><img src="../chittortech_logo_1775884354186.png" alt="Logo" class="h-6"></div>
+                <span class="text-sm font-semibold text-blue-600 uppercase tracking-wider">Use Cases & Deployment</span>
+            </header>
+
+            <h2 class="text-3xl font-bold text-slate-900 mb-6">Who Uses RAG Knowledge AI?</h2>
+            
+            <div class="space-y-4 mb-10">
+                <div class="flex items-start gap-3">
+                    <div class="w-6 h-6 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center flex-shrink-0 mt-0.5"><svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></div>
+                    <div>
+                        <h4 class="font-bold text-slate-800 text-sm">Internal Employee Helpdesk</h4>
+                        <p class="text-xs text-slate-600">Let employees ask HR policies, IT procedures, and FAQs in natural language, reducing HR ticket volume by 60%+.</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3">
+                    <div class="w-6 h-6 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center flex-shrink-0 mt-0.5"><svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></div>
+                    <div>
+                        <h4 class="font-bold text-slate-800 text-sm">Customer Support Knowledge Base</h4>
+                        <p class="text-xs text-slate-600">Power your support agents or public-facing chatbot with your entire product documentation.</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3">
+                    <div class="w-6 h-6 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center flex-shrink-0 mt-0.5"><svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></div>
+                    <div>
+                        <h4 class="font-bold text-slate-800 text-sm">Legal & Compliance Search</h4>
+                        <p class="text-xs text-slate-600">Search contracts, regulations, and case law in seconds. Reduce legal research time from hours to minutes.</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3">
+                    <div class="w-6 h-6 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center flex-shrink-0 mt-0.5"><svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></div>
+                    <div>
+                        <h4 class="font-bold text-slate-800 text-sm">Sales Intelligence</h4>
+                        <p class="text-xs text-slate-600">Equip sales teams with AI access to case studies, competitor analysis, and pricing during live demos.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-slate-900 text-white rounded-2xl p-6">
+                <h3 class="text-xl font-bold mb-4 text-blue-400">Deployment Process</h3>
+                <div class="space-y-4">
+                    <div class="flex gap-4">
+                        <div class="font-bold text-slate-500">01</div>
+                        <div>
+                            <h4 class="font-bold text-sm">Audit & Ingestion</h4>
+                            <p class="text-xs text-slate-400">Audit existing docs, define scope, build ingestion pipeline.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="font-bold text-slate-500">02</div>
+                        <div>
+                            <h4 class="font-bold text-sm">Embedding & Indexing</h4>
+                            <p class="text-xs text-slate-400">Semantic chunking, vector conversion, vector database setup.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="font-bold text-slate-500">03</div>
+                        <div>
+                            <h4 class="font-bold text-sm">RAG & LLM Integration</h4>
+                            <p class="text-xs text-slate-400">Build retrieval pipeline, connect LLM, prompt engineering.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="font-bold text-slate-500">04</div>
+                        <div>
+                            <h4 class="font-bold text-sm">UI, Security & Deployment</h4>
+                            <p class="text-xs text-slate-400">Chat interface, RBAC, deployment on cloud or on-premise.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer-bar">
+            <span>ChittorTech™ | AI Solutions</span>
+            <span>Page 05</span>
+        </div>
+    </div>
+
+    <!-- PAGE 6: PRICING -->
+    <div class="page">
+        <div class="page-content">
+            <header class="flex justify-between items-center mb-6 pb-4 border-b border-gray-100">
+                <div class="bg-slate-900 rounded-lg p-2"><img src="../chittortech_logo_1775884354186.png" alt="Logo" class="h-6"></div>
+                <span class="text-sm font-semibold text-blue-600 uppercase tracking-wider">Pricing Plans</span>
+            </header>
+
+            <h2 class="text-3xl font-bold text-slate-900 mb-2">AI Solutions Pricing</h2>
+            <p class="text-sm text-slate-500 mb-8">Scalable AI packages tailored to your business operations.</p>
+
+            <div class="space-y-6">
+                <!-- Chatbots -->
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="pricing-card flex flex-col relative overflow-hidden p-5">
+                        <h3 class="text-lg font-bold text-slate-800 mb-1">Website AI Chatbot</h3>
+                        <p class="text-xs text-slate-500 mb-4">Customer support and lead generation widget trained on your site data.</p>
+                        <div class="mt-auto">
+                            <span class="text-[10px] text-slate-400 uppercase font-semibold block mb-0.5">Starting From</span>
+                            <div class="text-2xl font-bold text-blue-600">₹14,999</div>
+                        </div>
+                    </div>
+                    
+                    <div class="pricing-card flex flex-col relative overflow-hidden p-5 border-green-200 bg-green-50/30">
+                        <h3 class="text-lg font-bold text-slate-800 mb-1 flex items-center gap-2">
+                            <svg class="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771z"></path></svg>
+                            WhatsApp AI Bot
+                        </h3>
+                        <p class="text-xs text-slate-500 mb-4">Automate conversations and sales directly on WhatsApp Business.</p>
+                        <div class="mt-auto">
+                            <span class="text-[10px] text-slate-400 uppercase font-semibold block mb-0.5">Starting From</span>
+                            <div class="text-2xl font-bold text-green-600">₹19,999</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Package RAG Basic -->
+                <div class="pricing-card pricing-card-highlight flex flex-col relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-blue-600 text-white text-[10px] font-bold px-4 py-1.5 rounded-bl-lg uppercase tracking-widest shadow-md">Most Popular</div>
+                    <div class="flex justify-between items-start mb-4 mt-2">
+                        <div>
+                            <h3 class="text-2xl font-bold text-slate-800 mb-1">Internal RAG Knowledge Base</h3>
+                            <p class="text-sm text-slate-500 max-w-sm">Train AI on your company documents (PDFs, Word) for internal employee search and instant answers.</p>
+                        </div>
+                        <div class="text-right ml-4">
+                            <span class="text-xs text-slate-400 uppercase font-semibold block mb-1">Starting From</span>
+                            <div class="text-3xl font-bold text-blue-600">₹39,999</div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg p-4 border border-blue-100 shadow-inner">
+                        <ul class="grid grid-cols-2 gap-y-2 gap-x-4 text-sm text-slate-600">
+                            <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-blue-500 rounded-full"></div> Cloud Vector Database Setup</li>
+                            <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-blue-500 rounded-full"></div> LLM Integration (OpenAI/Claude)</li>
+                            <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-blue-500 rounded-full"></div> Document Ingestion Pipeline</li>
+                            <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-blue-500 rounded-full"></div> Custom Web Chat Interface</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Enterprise RAG -->
+                <div class="bg-slate-900 text-white rounded-2xl p-6 relative overflow-hidden shadow-xl mt-6">
+                    <div class="absolute inset-0 opacity-10 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjEiIGZpbGw9IiNmZmYiLz48L3N2Zz4=')]"></div>
+                    <div class="relative z-10">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-2xl font-bold mb-1 text-blue-300">Enterprise AI RAG System</h3>
+                                <p class="text-sm text-slate-300 max-w-sm">Full-scale private deployment. Syncs with live databases, secure environments, and granular RBAC.</p>
+                            </div>
+                            <div class="text-right border-l border-slate-700 pl-6 ml-4">
+                                <span class="text-xs text-slate-400 uppercase font-semibold block mb-1">Starting From</span>
+                                <div class="text-3xl font-bold text-white">₹79,999<span class="text-lg text-slate-400 font-normal">+</span></div>
+                            </div>
+                        </div>
+                        <ul class="grid grid-cols-2 gap-y-2 gap-x-4 text-sm text-slate-300">
+                            <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-blue-500 rounded-full"></div> Local LLM & On-Premise Options</li>
+                            <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-blue-500 rounded-full"></div> SharePoint & SQL Database Sync</li>
+                            <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-blue-500 rounded-full"></div> Role-Based Access Control</li>
+                            <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 bg-blue-500 rounded-full"></div> API Integration into ERP/CRM</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer-bar">
+            <span>ChittorTech™ | AI Solutions</span>
+            <span>Page 06</span>
+        </div>
+    </div>
+
+    <!-- PAGE 7: CUSTOM SOLUTIONS & PRICING -->
+    <div class="page">
+        <div class="page-content flex flex-col justify-center items-center text-center">
+            <div class="w-20 h-20 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center mb-8 mt-10">
+                <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"></path></svg>
+            </div>
+            
+            <h2 class="text-4xl font-bold text-slate-900 mb-6">Customizable Solutions</h2>
+            <p class="text-xl text-slate-600 mb-12 max-w-2xl leading-relaxed">
+                Every business is unique, and so are its digital requirements. We specialize in building fully customized AI solutions, RAG pipelines, and Chatbots tailored entirely to your specific operational needs and goals.
+            </p>
+
+            <div class="bg-blue-50 border border-blue-200 rounded-2xl p-8 max-w-2xl w-full text-left shadow-sm mb-8">
+                <h3 class="text-xl font-bold text-slate-800 mb-4 flex items-center gap-2">
+                    <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    Pricing Disclaimer
+                </h3>
+                <ul class="space-y-4 text-slate-700 text-base">
+                    <li class="flex items-start gap-3">
+                        <div class="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
+                        <span><strong>Starting Prices:</strong> All AI development prices mentioned in this brochure are minimum starting prices for standard implementations.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <div class="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
+                        <span><strong>Custom Rates:</strong> Pricing for custom AI systems will vary based on document volume, API integrations, security requirements, and local vs cloud models.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <div class="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
+                        <span><strong>Final Quotation:</strong> After a detailed audit of your data sources and goals, we will provide a comprehensive, finalized quotation specific to your project.</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <p class="text-base font-medium text-slate-500">Reach out to us to discuss your customized AI requirements.</p>
+        </div>
+        <div class="footer-bar">
+            <span>ChittorTech™ | AI Solutions</span>
+            <span>Page 07</span>
+        </div>
+    </div>
+
+    <!-- PAGE 8: BACK COVER -->
+    <div class="page bg-gradient-tech flex flex-col justify-center items-center text-center relative text-white">
+        <!-- Abstract background elements -->
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden opacity-10">
+            <svg viewBox="0 0 100 100" preserveAspectRatio="none" class="absolute w-full h-full text-blue-500">
+                <path d="M0,0 L100,0 L100,100 L0,100 Z" fill="none" stroke="currentColor" stroke-width="0.5"/>
+                <circle cx="50" cy="50" r="40" fill="none" stroke="currentColor" stroke-width="0.2"/>
+                <circle cx="50" cy="50" r="30" fill="none" stroke="currentColor" stroke-width="0.2"/>
+            </svg>
+        </div>
+        
+        <div class="z-10 flex flex-col items-center max-w-2xl px-8">
+            <h2 class="text-5xl font-bold mb-6 tracking-tight">Let's Automate With AI.</h2>
+            <p class="text-xl font-light text-blue-200 mb-12">Ready to unlock your enterprise knowledge and automate customer service? Contact ChittorTech today.</p>
+            
+            <div class="bg-slate-900/50 backdrop-blur-md border border-slate-700/50 rounded-2xl p-8 w-full max-w-md shadow-2xl">
+                <div class="mb-6">
+                    <h3 class="text-sm uppercase tracking-widest text-slate-400 font-bold mb-2">Contact Us</h3>
+                    <div class="flex items-center justify-center gap-3 text-lg font-medium text-white mb-2">
+                        <svg class="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        contact@chittortech.online
+                    </div>
+                </div>
+                
+                <div class="pt-6 border-t border-slate-700/50">
+                    <h3 class="text-sm uppercase tracking-widest text-slate-400 font-bold mb-2">Visit Us</h3>
+                    <div class="flex items-center justify-center gap-3 text-lg font-medium text-white">
+                        <svg class="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path></svg>
+                        www.chittortech.online
+                    </div>
+                </div>
+            </div>
+            
+            <img src="../chittortech_logo_1775884354186.png" alt="ChittorTech Logo" class="h-24 mt-16">
+        </div>
+    </div>
+
+</body>
+</html>

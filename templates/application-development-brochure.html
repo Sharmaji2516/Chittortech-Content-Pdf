@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChittorTech - Application Development Brochure</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0f172a;
+            --secondary: #2563eb;
+            --accent: #3b82f6;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f1f5f9;
+            margin: 0;
+            padding: 0;
+            -webkit-print-color-adjust: exact !important;
+            print-color-adjust: exact !important;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Outfit', sans-serif;
+        }
+        .page {
+            width: 210mm;
+            height: 297mm;
+            background: white;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            page-break-after: always;
+            page-break-inside: avoid;
+        }
+        @media print {
+            body {
+                background: none;
+            }
+            .page {
+                margin: 0;
+                box-shadow: none;
+            }
+        }
+        .bg-gradient-tech {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #3b82f6, #06b6d4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .pricing-card {
+            border: 1px solid #e2e8f0;
+            border-radius: 16px;
+            padding: 24px;
+            background: #ffffff;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+        .pricing-card-highlight {
+            border: 2px solid #3b82f6;
+            background: linear-gradient(to bottom, #ffffff, #f8fafc);
+            box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.1);
+        }
+        .footer-bar {
+            height: 50px;
+            background: #0f172a;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 40px;
+            color: #94a3b8;
+            font-size: 12px;
+            flex-shrink: 0;
+            margin-top: auto;
+            width: 100%;
+        }
+        .page-content {
+            padding: 35px 40px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- PAGE 1: COVER -->
+    <div class="page bg-gradient-tech flex flex-col justify-center items-center text-center relative text-white">
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden opacity-10">
+            <svg viewBox="0 0 100 100" preserveAspectRatio="none" class="absolute w-full h-full text-blue-500">
+                <path d="M0,0 L100,0 L100,100 L0,100 Z" fill="none" stroke="currentColor" stroke-width="0.5"/>
+                <circle cx="50" cy="50" r="40" fill="none" stroke="currentColor" stroke-width="0.2"/>
+                <circle cx="50" cy="50" r="30" fill="none" stroke="currentColor" stroke-width="0.2"/>
+            </svg>
+        </div>
+        
+        <div class="z-10 flex flex-col items-center max-w-2xl px-8">
+            <img src="../chittortech_logo_1775884354186.png" alt="ChittorTech Logo" class="h-32 mb-6">
+            <div class="mb-10 inline-flex items-center gap-2 bg-gradient-to-r from-orange-500/20 via-white/20 to-green-500/20 border border-white/30 backdrop-blur-md px-5 py-2 rounded-full text-white font-semibold text-sm shadow-xl">
+                <span>🚀 iStart Approved Startup (Rajasthan Government)</span>
+            </div>
+            <h1 class="text-6xl font-bold mb-4 tracking-tight">CHITTORTECH™</h1>
+            <p class="text-2xl font-light text-blue-200 mb-12">Technology Solutions That Grow With Your Business.</p>
+            
+            <div class="flex flex-wrap justify-center gap-4 text-lg font-bold tracking-widest uppercase text-blue-400 border border-blue-500/50 rounded-xl py-3 px-6 bg-blue-900/30">
+                <span>Mobile App Development Guide</span>
+            </div>
+        </div>
+
+        <div class="absolute bottom-12 text-blue-400 font-medium text-lg">
+            www.chittortech.online
+        </div>
+    </div>
+
+    <!-- PAGE 2: WHY CHITTORTECH -->
+    <div class="page">
+        <div class="page-content">
+            <header class="flex justify-between items-center mb-10 pb-6 border-b border-gray-100">
+                <div class="bg-slate-900 rounded-xl p-3"><img src="../chittortech_logo_1775884354186.png" alt="Logo" class="h-8"></div>
+                <span class="text-sm font-semibold text-gray-400 uppercase tracking-wider">Why Choose Us</span>
+            </header>
+
+            <h2 class="text-5xl font-bold text-slate-900 mb-6">Mobile App Development & Solutions</h2>
+            <p class="text-xl text-slate-600 mb-10 leading-relaxed">
+                In today’s mobile-first world, businesses cannot afford to ignore Android. With more than 87% of the global smartphone market share, it is the most powerful platform to connect, engage, and retain customers.
+            </p>
+
+            <div class="bg-blue-600 text-white p-8 rounded-2xl mb-12 shadow-lg">
+                <h3 class="text-2xl font-bold mb-3">Best App Development Company</h3>
+                <p class="text-blue-100">
+                    We engineer custom native Android apps, scalable iOS apps, and cross-platform mobile solutions built for speed, security, and high user retention. Whether you need an app for smartphones, tablets, or smart TVs, we deliver.
+                </p>
+            </div>
+
+            <h3 class="text-2xl font-bold text-slate-900 mb-6">Why Partner With Us?</h3>
+            <div class="grid grid-cols-2 gap-6">
+                <div class="flex items-start gap-4">
+                    <div class="w-10 h-10 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-slate-800">Maximizing ROI</h4>
+                        <p class="text-sm text-slate-500">We build tailored solutions that directly contribute to your bottom line and customer growth.</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-4">
+                    <div class="w-10 h-10 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-slate-800">Latest Technologies</h4>
+                        <p class="text-sm text-slate-500">Using the latest Android tools like Kotlin, Java, Flutter, and React Native.</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-4">
+                    <div class="w-10 h-10 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path></svg>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-slate-800">Intuitive UI/UX</h4>
+                        <p class="text-sm text-slate-500">Designing interfaces that ensure unmatched customer engagement and ease of use.</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-4">
+                    <div class="w-10 h-10 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-slate-800">Performance & Security</h4>
+                        <p class="text-sm text-slate-500">Ensuring stability, speed, and data security in every application we deploy.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bar">
+            <span>ChittorTech™ | Mobile App Development</span>
+            <span>Page 02</span>
+        </div>
+    </div>
+
+    <!-- PAGE 3: EXPERTISE -->
+    <div class="page">
+        <div class="page-content">
+            <header class="flex justify-between items-center mb-10 pb-6 border-b border-gray-100">
+                <div class="bg-slate-900 rounded-lg p-2"><img src="../chittortech_logo_1775884354186.png" alt="Logo" class="h-6"></div>
+                <span class="text-sm font-semibold text-blue-600 uppercase tracking-wider">Our Expertise</span>
+            </header>
+
+            <h2 class="text-3xl font-bold text-slate-900 mb-8">Our App Development Expertise</h2>
+
+            <div class="grid grid-cols-2 gap-6">
+                <div class="bg-slate-50 p-5 rounded-xl border border-slate-100">
+                    <h3 class="font-bold text-slate-800 mb-2">Custom App Development</h3>
+                    <p class="text-sm text-slate-500">Using the latest SDKs, we develop apps tailored to your unique business needs, ensuring high scalability and performance.</p>
+                </div>
+                <div class="bg-slate-50 p-5 rounded-xl border border-slate-100">
+                    <h3 class="font-bold text-slate-800 mb-2">Native Android & iOS</h3>
+                    <p class="text-sm text-slate-500">We specialize in native app development, leveraging the power of Kotlin, Java, and Swift to deliver robust apps.</p>
+                </div>
+                <div class="bg-slate-50 p-5 rounded-xl border border-slate-100">
+                    <h3 class="font-bold text-slate-800 mb-2">UI/UX Design</h3>
+                    <p class="text-sm text-slate-500">Our design team creates interactive and user-friendly layouts that enhance customer experience and keep users engaged.</p>
+                </div>
+                <div class="bg-slate-50 p-5 rounded-xl border border-slate-100">
+                    <h3 class="font-bold text-slate-800 mb-2">Cloud-Based Solutions</h3>
+                    <p class="text-sm text-slate-500">With cloud integration, your app remains secure, scalable, and accessible, supporting large-scale business operations.</p>
+                </div>
+                <div class="bg-slate-50 p-5 rounded-xl border border-slate-100">
+                    <h3 class="font-bold text-slate-800 mb-2">App Porting & Migration</h3>
+                    <p class="text-sm text-slate-500">We provide smooth iOS-to-Android migration or platform switching, ensuring a hassle-free experience.</p>
+                </div>
+                <div class="bg-slate-50 p-5 rounded-xl border border-slate-100">
+                    <h3 class="font-bold text-slate-800 mb-2">App Testing Services</h3>
+                    <p class="text-sm text-slate-500">Unit testing, regression testing, and beta testing to ensure your application is bug-free, reliable, and market-ready.</p>
+                </div>
+            </div>
+
+            <div class="mt-12 bg-slate-900 text-white p-8 rounded-2xl">
+                <h3 class="text-xl font-bold mb-6 text-blue-400">Our Development Process</h3>
+                <div class="space-y-4">
+                    <div class="flex items-center gap-4"><div class="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center font-bold text-sm">1</div><div><strong>Analysis:</strong> Understand project goals, audience, and market.</div></div>
+                    <div class="flex items-center gap-4"><div class="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center font-bold text-sm">2</div><div><strong>Design:</strong> Create wireframes, user journeys, and interactive UI.</div></div>
+                    <div class="flex items-center gap-4"><div class="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center font-bold text-sm">3</div><div><strong>Architecture & Dev:</strong> Agile iterations using right tools and APIs.</div></div>
+                    <div class="flex items-center gap-4"><div class="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center font-bold text-sm">4</div><div><strong>Testing & Deployment:</strong> QA, bug fixing, and Google Play Store launch.</div></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bar">
+            <span>ChittorTech™ | Mobile App Development</span>
+            <span>Page 03</span>
+        </div>
+    </div>
+
+    <!-- PAGE 4: PRICING -->
+    <div class="page">
+        <div class="page-content">
+            <header class="flex justify-between items-center mb-6 pb-4 border-b border-gray-100">
+                <div class="bg-slate-900 rounded-lg p-2"><img src="../chittortech_logo_1775884354186.png" alt="Logo" class="h-6"></div>
+                <span class="text-sm font-semibold text-blue-600 uppercase tracking-wider">Services & Pricing</span>
+            </header>
+
+            <h2 class="text-3xl font-bold text-slate-900 mb-2">App Development Packages</h2>
+            <p class="text-sm text-slate-500 mb-8">Professional app solutions designed for startups, SMBs, and enterprises.</p>
+
+            <div class="space-y-6">
+                <!-- Package 1 -->
+                <div class="pricing-card flex flex-col relative overflow-hidden">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="text-2xl font-bold text-slate-800 mb-1">Basic Native App (Android or iOS)</h3>
+                            <p class="text-sm text-slate-500 max-w-md">Essential application for startups to build MVPs quickly, validate ideas, and scale faster with cost-efficient solutions.</p>
+                        </div>
+                        <div class="text-right ml-4 border-l border-slate-100 pl-6">
+                            <span class="text-[10px] text-slate-400 uppercase font-semibold block mb-1">Starting From</span>
+                            <div class="text-3xl font-bold text-blue-600">₹19,999</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Package 2 -->
+                <div class="pricing-card pricing-card-highlight flex flex-col relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-blue-600 text-white text-[10px] font-bold px-4 py-1.5 rounded-bl-lg uppercase tracking-widest shadow-md">Popular</div>
+                    <div class="flex justify-between items-start mt-2">
+                        <div>
+                            <h3 class="text-2xl font-bold text-slate-800 mb-1">Professional App (Native)</h3>
+                            <p class="text-sm text-slate-500 max-w-md">Feature-rich native application with robust backend architecture and APIs to drive customer engagement and sales.</p>
+                        </div>
+                        <div class="text-right ml-4 border-l border-slate-100 pl-6">
+                            <span class="text-[10px] text-slate-400 uppercase font-semibold block mb-1">Starting From</span>
+                            <div class="text-3xl font-bold text-blue-600">₹29,999</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Package 3 -->
+                <div class="pricing-card flex flex-col relative overflow-hidden">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="text-2xl font-bold text-slate-800 mb-1">Cross-Platform App (Flutter/React Native)</h3>
+                            <p class="text-sm text-slate-500 max-w-md">Single codebase for high-quality deployment on both Android and iOS platforms simultaneously.</p>
+                        </div>
+                        <div class="text-right ml-4 border-l border-slate-100 pl-6">
+                            <span class="text-[10px] text-slate-400 uppercase font-semibold block mb-1">Starting From</span>
+                            <div class="text-3xl font-bold text-blue-600">₹34,999</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Package 4 -->
+                <div class="pricing-card flex flex-col relative overflow-hidden">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="text-2xl font-bold text-slate-800 mb-1">E-Commerce / On-Demand App</h3>
+                            <p class="text-sm text-slate-500 max-w-md">Mobile commerce with secure payment gateways, cart, real-time tracking (food delivery, taxi booking, etc).</p>
+                        </div>
+                        <div class="text-right ml-4 border-l border-slate-100 pl-6">
+                            <span class="text-[10px] text-slate-400 uppercase font-semibold block mb-1">Starting From</span>
+                            <div class="text-3xl font-bold text-blue-600">₹49,999<span class="text-lg text-slate-400">+</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Enterprise -->
+                <div class="bg-slate-900 text-white rounded-2xl p-6 relative overflow-hidden shadow-xl">
+                    <div class="relative z-10 flex justify-between items-center">
+                        <div class="pr-6">
+                            <h3 class="text-2xl font-bold mb-2">Enterprise Mobility Solution</h3>
+                            <p class="text-sm text-slate-300">Automate operations, improve employee collaboration, and stay competitive with secure, enterprise-grade apps.</p>
+                        </div>
+                        <div class="text-right pl-6 border-l border-slate-700 flex-shrink-0">
+                            <span class="text-[10px] text-slate-400 uppercase font-semibold block mb-1">Starting From</span>
+                            <div class="text-3xl font-bold text-blue-400">₹79,999<span class="text-xl text-slate-500">+</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-6 flex items-center justify-between p-4 border border-blue-200 bg-blue-50 rounded-xl">
+                <div>
+                    <h4 class="font-bold text-blue-900">App Maintenance & Updates</h4>
+                    <p class="text-xs text-blue-700">Continuous support, performance monitoring, bug fixing, and Play Store updates.</p>
+                </div>
+                <div class="font-bold text-blue-600 text-xl whitespace-nowrap">₹2,999 <span class="text-sm font-normal text-blue-500">/mo</span></div>
+            </div>
+
+        </div>
+        <div class="footer-bar">
+            <span>ChittorTech™ | Mobile App Development</span>
+            <span>Page 04</span>
+        </div>
+    </div>
+    
+    <!-- PAGE 5: HOW WE SERVE -->
+    <div class="page">
+        <div class="page-content">
+            <header class="flex justify-between items-center mb-8 pb-4 border-b border-gray-100">
+                <div class="bg-slate-900 rounded-lg p-2"><img src="../chittortech_logo_1775884354186.png" alt="Logo" class="h-6"></div>
+                <span class="text-sm font-semibold text-blue-600 uppercase tracking-wider">Business Impact</span>
+            </header>
+
+            <h2 class="text-3xl font-bold text-slate-900 mb-6">How Android Apps Grow Your Business</h2>
+            
+            <div class="grid grid-cols-2 gap-4 mb-10">
+                <div class="p-4 bg-white border border-slate-200 rounded-xl shadow-sm">
+                    <h4 class="font-bold text-slate-800 mb-1">Business Visibility & 24/7 Access</h4>
+                    <p class="text-xs text-slate-500">Reach millions globally. Apps allow customers to interact with your services anytime, anywhere.</p>
+                </div>
+                <div class="p-4 bg-white border border-slate-200 rounded-xl shadow-sm">
+                    <h4 class="font-bold text-slate-800 mb-1">Customer Engagement</h4>
+                    <p class="text-xs text-slate-500">Features like push notifications, in-app chat, and recommendations keep customers connected.</p>
+                </div>
+                <div class="p-4 bg-white border border-slate-200 rounded-xl shadow-sm">
+                    <h4 class="font-bold text-slate-800 mb-1">Easier Transactions</h4>
+                    <p class="text-xs text-slate-500">With secure payment gateways, customers can shop, subscribe, or book services seamlessly.</p>
+                </div>
+                <div class="p-4 bg-white border border-slate-200 rounded-xl shadow-sm">
+                    <h4 class="font-bold text-slate-800 mb-1">Brand Loyalty & Lead Gen</h4>
+                    <p class="text-xs text-slate-500">Direct channel for promotions and offers, strengthening brand trust and repeat usage.</p>
+                </div>
+            </div>
+            
+            <h2 class="text-3xl font-bold text-slate-900 mb-6">How We Serve Our Customers</h2>
+            
+            <div class="space-y-4">
+                <div class="flex items-start gap-4">
+                    <div class="w-2 h-2 rounded-full bg-blue-500 mt-2"></div>
+                    <div>
+                        <h4 class="font-bold text-slate-800">Requirement Gathering & Analysis</h4>
+                        <p class="text-sm text-slate-600">In-depth discussions to understand your vision, business model, and industry challenges before creating a customized app roadmap.</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-4">
+                    <div class="w-2 h-2 rounded-full bg-blue-500 mt-2"></div>
+                    <div>
+                        <h4 class="font-bold text-slate-800">Agile Development Methodology</h4>
+                        <p class="text-sm text-slate-600">Faster delivery cycles with flexibility to incorporate client feedback during development.</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-4">
+                    <div class="w-2 h-2 rounded-full bg-blue-500 mt-2"></div>
+                    <div>
+                        <h4 class="font-bold text-slate-800">Transparent Communication</h4>
+                        <p class="text-sm text-slate-600">Regular updates, progress reports, and open communication channels ensure you are always in the loop.</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-4">
+                    <div class="w-2 h-2 rounded-full bg-blue-500 mt-2"></div>
+                    <div>
+                        <h4 class="font-bold text-slate-800">Scalable & Secure Solutions</h4>
+                        <p class="text-sm text-slate-600">Designed to grow with your business, handling increasing traffic while keeping data safe with top security practices.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-auto bg-slate-50 p-6 rounded-xl border-l-4 border-blue-600">
+                <h4 class="font-bold text-slate-800 mb-2">Customer Satisfaction – Our Core Priority</h4>
+                <p class="text-sm text-slate-600">
+                    We build apps with a user-centered approach. We are committed to on-time delivery without compromising quality. We offer continuous support post-deployment and encourage client involvement at every step for guaranteed results.
+                </p>
+            </div>
+
+        </div>
+        <div class="footer-bar">
+            <span>ChittorTech™ | Mobile App Development</span>
+            <span>Page 05</span>
+        </div>
+    </div>
+
+    <!-- PAGE 6: CUSTOM SOLUTIONS & PRICING -->
+    <div class="page">
+        <div class="page-content flex flex-col justify-center items-center text-center">
+            <div class="w-20 h-20 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center mb-8 mt-10">
+                <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"></path></svg>
+            </div>
+            
+            <h2 class="text-4xl font-bold text-slate-900 mb-6">Customizable Solutions</h2>
+            <p class="text-xl text-slate-600 mb-12 max-w-2xl leading-relaxed">
+                Every business is unique, and so are its digital requirements. We specialize in building fully customized websites, applications, and SaaS platforms tailored entirely to your specific operational needs and goals.
+            </p>
+
+            <div class="bg-blue-50 border border-blue-200 rounded-2xl p-8 max-w-2xl w-full text-left shadow-sm mb-8">
+                <h3 class="text-xl font-bold text-slate-800 mb-4 flex items-center gap-2">
+                    <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    Pricing Disclaimer
+                </h3>
+                <ul class="space-y-4 text-slate-700 text-base">
+                    <li class="flex items-start gap-3">
+                        <div class="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
+                        <span><strong>Starting Prices:</strong> All prices mentioned in this brochure are minimum starting prices for standard features and screens.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <div class="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
+                        <span><strong>Custom Rates:</strong> Pricing for custom and scalable solutions will vary based on complexity, feature set, design requirements, third-party integrations, and specific client needs.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <div class="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
+                        <span><strong>Final Quotation:</strong> After a detailed consultation to understand your exact requirements, we will provide a comprehensive, finalized quotation specific to your project.</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <p class="text-base font-medium text-slate-500">Reach out to us to discuss your customized project requirements.</p>
+        </div>
+        <div class="footer-bar">
+            <span>ChittorTech™ | Mobile App Development</span>
+            <span>Page 06</span>
+        </div>
+    </div>
+
+    <!-- PAGE 7: BACK COVER -->
+    <div class="page bg-gradient-tech flex flex-col justify-center items-center text-center relative text-white">
+        <!-- Abstract background elements -->
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden opacity-10">
+            <svg viewBox="0 0 100 100" preserveAspectRatio="none" class="absolute w-full h-full text-blue-500">
+                <path d="M0,0 L100,0 L100,100 L0,100 Z" fill="none" stroke="currentColor" stroke-width="0.5"/>
+                <circle cx="50" cy="50" r="40" fill="none" stroke="currentColor" stroke-width="0.2"/>
+                <circle cx="50" cy="50" r="30" fill="none" stroke="currentColor" stroke-width="0.2"/>
+            </svg>
+        </div>
+        
+        <div class="z-10 flex flex-col items-center max-w-2xl px-8">
+            <h2 class="text-5xl font-bold mb-6 tracking-tight">Let's Build Something Great.</h2>
+            <p class="text-xl font-light text-blue-200 mb-12">Ready to transform your ideas into reality? Get in touch with us today for a customized quotation.</p>
+            
+            <div class="bg-slate-900/50 backdrop-blur-md border border-slate-700/50 rounded-2xl p-8 w-full max-w-md shadow-2xl">
+                <div class="mb-6">
+                    <h3 class="text-sm uppercase tracking-widest text-slate-400 font-bold mb-2">Contact Us</h3>
+                    <div class="flex items-center justify-center gap-3 text-lg font-medium text-white mb-2">
+                        <svg class="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        contact@chittortech.online
+                    </div>
+                </div>
+                
+                <div class="pt-6 border-t border-slate-700/50">
+                    <h3 class="text-sm uppercase tracking-widest text-slate-400 font-bold mb-2">Visit Us</h3>
+                    <div class="flex items-center justify-center gap-3 text-lg font-medium text-white">
+                        <svg class="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path></svg>
+                        www.chittortech.online
+                    </div>
+                </div>
+            </div>
+            
+            <img src="../chittortech_logo_1775884354186.png" alt="ChittorTech Logo" class="h-24 mt-16">
+        </div>
+    </div>
+
+</body>
+</html>
